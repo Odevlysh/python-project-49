@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual Environment
+.venv
+
+# Other files
+.DS_Store
+*.log
