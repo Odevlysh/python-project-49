@@ -10,4 +10,7 @@ publish:
 package-install:
 	source .venv/bin/activate && python3 -m pip install dist/*.whl
 
+lint:
+	poetry run flake8 brain_games
+
 .PHONY: install brain-games
