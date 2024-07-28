@@ -10,5 +10,10 @@ def welcome_user():
     print(f'Hello, {name}!')
     return name
 
+
+def congratulate_user(name):
+    print(f"Congratulations, {name}!")
+
+
 # if __name__ == '__main__':
     # main()
