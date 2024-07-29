@@ -2,7 +2,8 @@
 
 import random
 
-DESCRIPTION = 'What is the result of the expression?'
+DESCRIPTION = 'What is the result of the expression? Version 7-28-24'
+
 
 def get_question_and_answer():
     operators_list = ['+', '-', '*']
@@ -19,10 +20,3 @@ def get_question_and_answer():
 
     question = f'{a} {operator} {b}'
     return question, str(correct_answer)
-
-def main():
-    from brain_games.game_engine import run_game
-    run_game(brain_calc)
-
-if __name__ == '__main__':
-    main()
