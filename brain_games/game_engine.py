@@ -4,7 +4,7 @@ MAX_ROUNDS = 3
 
 
 def run_game(game):
-    print("Welcome to the Brain Games! version 7-28-2024")
+    print("Welcome to the Brain Games! version 7-30-2024")
     name = prompt.string("May I have your name? ")
     print(f'Hello, {name}!')
     print(game.DESCRIPTION)
@@ -22,6 +22,5 @@ def run_game(game):
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {name}")
             counter = 0
-            return
 
     print(f'Congratulations, {name}!')
