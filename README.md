@@ -11,3 +11,7 @@
 ## Demo "brain-calc"
 ### Starting the Game and Gameplay
 <a href="https://asciinema.org/a/tTyc4uKcPbz8WjzzYKvjE6pH2" target="_blank"><img src="https://asciinema.org/a/tTyc4uKcPbz8WjzzYKvjE6pH2.svg" /></a>
+
+## Demo "brain-progression"
+### Starting the Game and Gameplay
+https://asciinema.org/a/l75QsfkEsTZ63JAui3UJaxZgT
