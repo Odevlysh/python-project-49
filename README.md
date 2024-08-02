@@ -15,3 +15,7 @@
 ## Demo "brain-progression"
 ### Starting the Game and Gameplay
 https://asciinema.org/a/l75QsfkEsTZ63JAui3UJaxZgT
+
+## Demo "brain-progression"
+### Starting the Game and Gameplay
+https://asciinema.org/a/CghFsAAij7IhyjNdj6aBLg73f
