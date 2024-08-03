@@ -1,11 +1,18 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "A collection of five console games designed for educational and entertainment purposes."
 authors = [" Olha Devlysh <odevlysh@gmail.com>"]
 readme = "README.md"
+repository = "https://github.com/Odevlysh/python-project-49"
 packages = [
   { include = "brain_games" },
+]
+
+classifiers = [
+  "Programming Language :: Python :: 3.11",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
 ]
 
 [tool.poetry.dependencies]

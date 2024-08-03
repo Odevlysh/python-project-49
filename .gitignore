@@ -13,3 +13,11 @@ build/
 # Other files
 .DS_Store
 *.log
+
+# Backup files
+*.save
+
+# Editor temporary files
+*.swp
+*.swo
+*~

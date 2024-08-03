@@ -2,7 +2,7 @@
 
 import random
 
-DESCRIPTION = 'What is the result of the expression? Version 7-28-24'
+DESCRIPTION = 'What is the result of the expression?'
 
 
 def get_question_and_answer():
