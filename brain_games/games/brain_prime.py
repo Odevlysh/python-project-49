@@ -3,27 +3,29 @@
 import random
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+RANGE_START = 0
+RANGE_END = 20
 
 
-def get_question_and_answer():
-
-    question = random.randint(1, 20)
-
-    if question == 1:
-        correct_answer = 'no'
+def is_prime(question):
+    if question <= 1:
+        return False
 
     elif question == 2 or question == 3:
-        correct_answer = 'yes'
+        return True
 
     else:
         i = 2
-        correct_answer = 'yes'
-
         while i * i <= question:
             if question % i == 0:
-                correct_answer = 'no'
-                break
-
+                return False
             i += 1
+        return True
+
+
+def get_question_and_answer():
+    question = random.randint(RANGE_START, RANGE_END)
+
+    correct_answer = 'yes' if is_prime(question) else 'no'
 
     return question, correct_answer

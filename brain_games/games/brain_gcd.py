@@ -1,17 +1,19 @@
 # brain-gcd
 
 import random
+from math import gcd
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
+RANGE_START = 1
+RANGE_END = 200
 
 
 def get_question_and_answer():
-    a = random.randint(1, 200)
-    b = random.randint(1, 200)
-    question = str(a) + ' ' + str(b)
-    while b:
-        a, b = b, a % b
+    a = random.randint(RANGE_START, RANGE_END)
+    b = random.randint(RANGE_START, RANGE_END)
 
-    correct_answer = a
+    question = f'{str(a)} {str(b)}'
+
+    correct_answer = gcd(a, b)
 
     return question, str(correct_answer)

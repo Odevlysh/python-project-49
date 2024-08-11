@@ -3,13 +3,15 @@
 import random
 
 DESCRIPTION = 'What is the result of the expression?'
+RANGE_START = 1
+RANGE_END = 100
 
 
 def get_question_and_answer():
-    operators_list = ['+', '-', '*']
-    a = random.randint(1, 100)
-    b = random.randint(1, 100)
-    operator = random.choice(operators_list)
+    operators = ['+', '-', '*']
+    a = random.randint(RANGE_START, RANGE_END)
+    b = random.randint(RANGE_START, RANGE_END)
+    operator = random.choice(operators)
 
     if operator == '+':
         correct_answer = a + b

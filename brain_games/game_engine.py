@@ -1,6 +1,6 @@
 import prompt
 
-MAX_ROUNDS = 3
+ROUNDS_COUNT = 3
 
 
 def run_game(game):
@@ -9,15 +9,13 @@ def run_game(game):
     print(f"Hello, {name}!")
     print(game.DESCRIPTION)
 
-    counter = 0
-    while counter < MAX_ROUNDS:
+    for _ in range(ROUNDS_COUNT):
         question, correct_answer = game.get_question_and_answer()
         print(f"Question: {question}")
-        answer = input("Your answer: ").strip().lower()
+        answer = prompt.string("Your answer: ").strip().lower()
 
         if answer == correct_answer:
             print("Correct!")
-            counter += 1
         else:
             print(
                 f"'{answer}' is wrong answer ;(. "
@@ -25,6 +23,5 @@ def run_game(game):
             )
             print(f"Let's try again, {name}!")
             break
-
-    if counter == MAX_ROUNDS:
+    else:
         print(f"Congratulations, {name}!")
